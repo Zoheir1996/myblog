@@ -5,7 +5,7 @@
     <title>Ma page test</title>
   </head>
   <body>
-      @include('navbar')
-    <p>View</p>
+      @include('incs.navbar')
+      @yield('content')
   </body>
 </html>
