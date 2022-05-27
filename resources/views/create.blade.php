@@ -2,14 +2,20 @@
 @section('content')
 
 <form action="/articles" method="POST" class="form-example">
-    @csrf
+    @csrf   
     <div class="form-example">
       <label for="name">Enter your name: </label>
-      <input type="text" name="name" id="name" required>
+      <input type="text" name="name" id="name">
+      @error('name')
+        {{ $message }}
+        @enderror
     </div>
     <div class="form-example">
       <label for="email">Enter your email: </label>
-      <input type="email" name="email" id="email" required>
+      <input type="text" name="email" id="email">
+      @error('email')
+        {{ $message }}
+      @enderror
     </div>
     <div class="form-example">
       <input type="submit" value="Subscribe!">

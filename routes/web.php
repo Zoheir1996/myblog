@@ -20,3 +20,7 @@ Route::get('/', function(){
 
 Route::resource('articles', ArticleController::class);
 
+Route::get('/test',function(){  
+    die('function');
+    return view('test');
+})->middleware('custom.auth');
