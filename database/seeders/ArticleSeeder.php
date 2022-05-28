@@ -17,7 +17,6 @@ class ArticleSeeder extends Seeder
     public function run()
     {
         $faker = Factory::create();
-        dd($faker);
         for ($i = 0; $i < 26; $i++){
 
         Article::create([
