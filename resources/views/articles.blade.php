@@ -20,7 +20,7 @@
         @endforeach
     </div>
     <div class="d-flex justify-content-center mt-5">
-        {{$articles ->links()}}
+        {{$articles ->links('vendor.pagination.custom')}}
     </div>
 </div>
 @endsection 
