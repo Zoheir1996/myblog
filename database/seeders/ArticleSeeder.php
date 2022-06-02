@@ -25,5 +25,5 @@ class ArticleSeeder extends Seeder
             'content'=> $faker->text($MaxNbChars=600)
         ]);
     }
-}
+} 
 }
