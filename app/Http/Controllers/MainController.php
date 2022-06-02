@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Article;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
 
 class MainController extends Controller
 {
@@ -16,6 +17,15 @@ public function index() {
     $articles = Article::paginate(4);
     return view ('articles',[
         'articles' => $articles
+    ]);
+}
+
+
+public function show($slug)
+{
+    $article = Article::where('slug', $slug)->firstOrFail();
+    return view('article',[
+        'article' =>$article
     ]);
 }
 }
