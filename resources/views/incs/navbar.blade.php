@@ -13,5 +13,18 @@
           <a class="nav-link" href="#">Link</a>
         </li>
       </ul>
+      <div class="navbar-collapse collapse justify-content-between">
+      </div>
+      <ul class="navbar-nav ml-auto">
+        @if (Auth::user())
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Deconnexion</a>
+        </li>
+        @else
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Me connecter</a>
+        </li>
+        @endif
+      </ul>
     </div>
   </nav>
