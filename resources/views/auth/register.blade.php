@@ -2,6 +2,9 @@
 
 @section('content')
 <div class="container">
+    <div class="container">
+        <h1 class="text-center my-5">Page d'inscription</h1>
+        <div class="row justify-content-center mt-5">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -64,7 +67,7 @@
                         <div class="row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
+                                    M'inscrire
                                 </button>
                             </div>
                         </div>
