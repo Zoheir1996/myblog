@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="{{route('home')}}">
+    <a class="navbar-brand" href="{{  route('home')  }}">
         <i class="fas fa-home"></i>
        Accueil
     </a>
