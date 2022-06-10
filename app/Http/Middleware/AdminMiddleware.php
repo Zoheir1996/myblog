@@ -27,13 +27,16 @@ class AdminMiddleware
     {
         $user = Auth::user();
 
-        if ($user) {
+        if (!$user) {
             return redirect()->route('login');
+        }
+        if ($user->role !== User::ADMIN_ROLE){
+    
+        }
         
-        if ($user->role !== User::ADMIN_ROLE)
         return redirect()->route('login');
 
             return $next($request);
     }
-}
+    
 }
