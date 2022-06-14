@@ -27,3 +27,4 @@ Auth::routes();
 Route::get('/admin/articles', [ArticleController::class, 'index'])->middleware('admin')->name('articles.index');
 
 
+
