@@ -1,6 +1,6 @@
 @extends('base')
 
 @section('content')
-  ADMIN RESOURCE
+  @dump($articles)
 @endsection
 
