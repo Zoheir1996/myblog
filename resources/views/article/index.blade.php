@@ -1,7 +1,6 @@
 @extends('base')
 
 @section('content')
-  <div class="container">
     <h1 class="text-center my-5">Articles</h1>
     <div class="d-flex justify-content-center">
       <a class="btn btn-info my-3" href="{{ route('articles.create')  }}"><i class = 'fas fa-plus mx-2'></i>Ajouter un nouvel article</a>
