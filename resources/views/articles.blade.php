@@ -9,6 +9,7 @@
             <div class="card my-3">
                 <div class="card-body">
                 <h5 class = "card-title">{{$article -> title }}</h5>
+                <span class="badge bg-dark">{{$article->category->label}}</span>
                 <p class = "card-text">{{ $article -> subtitle}}</p>
                 <a href="{{  route('article',$article->slug) }}" class = "btn btn-primary">
                     Lire la suite
