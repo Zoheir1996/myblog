@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\User;
+use Illuminate\Support\Carbon;
 use Illuminate\Database\Seeder;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
@@ -24,7 +25,8 @@ class UserSeeder extends Seeder
             'email' => 'admin@admin.com',
             'name' => 'Admin',
             'password' => Hash::make('toor'),
-            'role' => User::ADMIN_ROLE
+            'role' => User::ADMIN_ROLE,
+            'created_at'=> Carbon::now()
         ]);
     }
 }
