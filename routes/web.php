@@ -24,7 +24,7 @@ Route::get('/articles{article:slug}', [MainController::class,'show']) ->name('ar
 
 Auth::routes();
 
-Route::prefix('admin')->group(function(){
+Route::middleware('auth')->prefix('admin')->group(function(){
     Route::resource('articles', ArticleController::class)->except([
         'show'
     ]);

@@ -12,8 +12,11 @@ class ExampleTest extends TestCase
      *
      * @return void
      */
-    public function test_the_application_returns_a_successful_response()
+
+
+    public function testBasicTest()
     {
+        $this->withoutExceptionHandling();
         $response = $this->get('/');
 
         $response->assertStatus(200);

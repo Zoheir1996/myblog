@@ -13,4 +13,5 @@ class RouteTest extends TestCase
 $response= $this->get('/admin/articles');
         $response-> assertRedirect('/login');
     }
+
 }
