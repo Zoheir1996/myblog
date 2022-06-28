@@ -10,6 +10,7 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class ModelTest extends TestCase
 {
+    use RefreshDatabase;
    public function testValidRegistration()
    {
        $faker = Factory::create();
@@ -36,7 +37,6 @@ class ModelTest extends TestCase
            'password_confirmation'=> 'password'
        ]);
 
-       
 
        $response->assertSessionHasErrors();
    }
