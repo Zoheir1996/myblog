@@ -1,8 +1,9 @@
 <?php
 
-use Illuminate\Database\Migrations\Migration;
-use Illuminate\Database\Schema\Blueprint;
+use App\Models\Category;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
 
 return new class extends Migration
 {
@@ -19,7 +20,6 @@ return new class extends Migration
             $table->string('subtitle');
             $table->string('slug')->nullable();
             $table->text('content');
-            $table->unsignedBigInteger('category_id');
             $table->foreignIdFor(Category::class)->references('id')->on('categories')->cascadeOnDelete();
             $table->timestamps();
 
