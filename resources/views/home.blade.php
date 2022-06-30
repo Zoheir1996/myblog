@@ -9,5 +9,4 @@
         <i class="fa-solid fa-arrow-right"></i>
         Learn more</a>
   </div>
-
 @endsection 

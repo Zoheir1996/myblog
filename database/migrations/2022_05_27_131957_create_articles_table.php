@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('slug')->nullable();
             $table->text('content');
             $table->unsignedBigInteger('category_id');
-            $table->foreign('category_id')->references('id')->on('categories');
+            $table->foreignIdFor(Category::class)->references('id')->on('categories')->cascadeOnDelete();
             $table->timestamps();
 
         });
