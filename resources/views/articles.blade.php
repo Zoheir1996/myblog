@@ -29,6 +29,7 @@
             <div class="custom-control custom-checkbox">
                 <input type="checkbox" class="custom-control-input"/>
                 <label class="custom-control-label">
+                    <i class="fas fa--{{$category->icon}}"></i>
                     {{$category->label}}
                 </label>
             </div>
